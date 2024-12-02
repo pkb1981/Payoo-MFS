@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- daisy ui & tailwind cdn link added -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 
 <head>
   <meta charset="UTF-8">
@@ -8,7 +11,46 @@
 </head>
 
 <body>
-
+  <main class="flex justify-center">
+    <!-- phone mockup from dailsy ui -->
+    <div class="mockup-phone">
+      <div class="camera"></div>
+      <div class="display">
+        <div class="artboard artboard-demo phone-3">
+          <!-- login section from hero in daisy ui -->
+          <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col">
+              <!-- delete login now header and paragraph -->
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Mobile Number</span>
+                    </label>
+                    <input id="mobile-number" type="text" placeholder="enter your number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">4 digit pin</span>
+                    </label>
+                    <input type="password" placeholder="your pin" class="input input-bordered" autocomplete="off" />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="button-login" class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- login.js file linked -->
+  <script src="./login.js"></script>
 </body>
 
 </html>
