@@ -20,12 +20,12 @@
           <!-- available balance on home screen by daisyui STAT -->
           <div class="stats shadow">
             <div class="stat">
-              <div class="stat-value">$89400</div>
+              <div id="account-balance" class="stat-value">89400</div>
               <div class="stat-desc">Available Balance</div>
             </div>
           </div>
           <!-- divider add from daisy ui DIVIDER -->
-          <div class="divider">OR</div>
+          <div class="divider"></div>
           <!-- user action button by BUTTON -->
           <div>
             <button class="btn btn-lg">Add Money</button>
@@ -39,18 +39,22 @@
                 <label class="label">
                   <span class="label-text">Amount</span>
                 </label>
-                <input type="email" placeholder="Amount" class="input input-bordered" required />
+                <!-- adding id for add money -->
+                <input id="input-add-money" type="text" placeholder="Amount" class="input input-bordered" required />
               </div>
               <div class="form-control">
                 <label class="label">
-                  <span class="label-text">Password</span>
+                  <span class="label-text">Pin Number</span>
                 </label>
                 <!-- adding autocomplete="off" -->
-                <input type="password" placeholder="password" class="input input-bordered" autocomplete="off" />
+                <!-- add id for pin number -->
+                <input id="input-pin-number" type="password" placeholder="Pin Number" class="input input-bordered"
+                  autocomplete="off" />
                 <!-- remove forget-password level -->
               </div>
               <div class="form-control mt-6">
-                <button class="btn btn-primary">Add Money</button>
+                <!-- adding button id -->
+                <button id="btn-add-money" class="btn btn-primary">Add Money</button>
               </div>
             </form>
           </div>
